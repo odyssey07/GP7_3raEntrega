@@ -33,6 +33,12 @@ public class Materia {
         this.añoMateria = añoMateria;
         this.activo = activo;
     }
+    
+    public Materia(int idMateria, String nombre, int añoMateria) {
+        this.idMateria = idMateria;
+        this.nombre = nombre;
+        this.añoMateria = añoMateria;
+    }
 
     public int getIdMateria() {
         return idMateria;
@@ -68,7 +74,7 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "Materia{" + "idMateria=" + idMateria + ", nombre=" + nombre + ", a\u00f1oMateria=" + añoMateria + '}';
+        return nombre;
     }
     
     

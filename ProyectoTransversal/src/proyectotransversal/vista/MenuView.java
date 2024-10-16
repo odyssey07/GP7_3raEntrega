@@ -35,6 +35,11 @@ public class MenuView extends javax.swing.JFrame {
         itemAlumnos = new javax.swing.JMenuItem();
         menuMateria = new javax.swing.JMenu();
         itemMaterias = new javax.swing.JMenuItem();
+        menuAdmin = new javax.swing.JMenu();
+        menuInscripcciones = new javax.swing.JMenuItem();
+        menuNotas = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        menuConsultasAlumnoMateria = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,6 +83,38 @@ public class MenuView extends javax.swing.JFrame {
 
         jMenuBar1.add(menuMateria);
 
+        menuAdmin.setText("Administración");
+
+        menuInscripcciones.setText("Inscripcciones");
+        menuInscripcciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuInscripccionesActionPerformed(evt);
+            }
+        });
+        menuAdmin.add(menuInscripcciones);
+
+        menuNotas.setText("Notas");
+        menuNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuNotasActionPerformed(evt);
+            }
+        });
+        menuAdmin.add(menuNotas);
+
+        jMenuBar1.add(menuAdmin);
+
+        jMenu1.setText("Consultas");
+
+        menuConsultasAlumnoMateria.setText("Alumnos por materia");
+        menuConsultasAlumnoMateria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuConsultasAlumnoMateriaActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuConsultasAlumnoMateria);
+
+        jMenuBar1.add(jMenu1);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -115,6 +152,33 @@ public class MenuView extends javax.swing.JFrame {
         materia.setVisible(true);
         escritorio.add(materia);
     }//GEN-LAST:event_itemMateriasActionPerformed
+
+    private void menuInscripccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuInscripccionesActionPerformed
+        // TODO add your handling code here:
+        escritorio.removeAll();
+        escritorio.repaint();
+        VistaInscripccion vista = new VistaInscripccion();
+        vista.setVisible(true);
+        escritorio.add(vista);
+    }//GEN-LAST:event_menuInscripccionesActionPerformed
+
+    private void menuNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuNotasActionPerformed
+        // TODO add your handling code here:
+        escritorio.removeAll();
+        escritorio.repaint();
+        VistaNotas vista = new VistaNotas();
+        vista.setVisible(true);
+        escritorio.add(vista);
+    }//GEN-LAST:event_menuNotasActionPerformed
+
+    private void menuConsultasAlumnoMateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuConsultasAlumnoMateriaActionPerformed
+        // TODO add your handling code here:
+        escritorio.removeAll();
+        escritorio.repaint();
+        VistaAlumnosPorMateria vista = new VistaAlumnosPorMateria();
+        vista.setVisible(true);
+        escritorio.add(vista);
+    }//GEN-LAST:event_menuConsultasAlumnoMateriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -155,8 +219,13 @@ public class MenuView extends javax.swing.JFrame {
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenuItem itemAlumnos;
     private javax.swing.JMenuItem itemMaterias;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu menuAdmin;
     private javax.swing.JMenu menuAlumno;
+    private javax.swing.JMenuItem menuConsultasAlumnoMateria;
+    private javax.swing.JMenuItem menuInscripcciones;
     private javax.swing.JMenu menuMateria;
+    private javax.swing.JMenuItem menuNotas;
     // End of variables declaration//GEN-END:variables
 }

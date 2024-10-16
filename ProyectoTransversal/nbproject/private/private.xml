@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Ulises/OneDrive/Desktop/Space/Windows%20General/ULP-Java/ProyectoTransversal/src/proyectotransversal/vista/VistaAlumnosPorMateria.java</file>
+            <file>file:/C:/Users/Ulises/OneDrive/Desktop/Space/Windows%20General/ULP-Java/ProyectoTransversal/src/proyectotransversal/modelo/Materia.java</file>
+            <file>file:/C:/Users/Ulises/OneDrive/Desktop/Space/Windows%20General/ULP-Java/ProyectoTransversal/src/proyectotransversal/vista/VistaNotas.java</file>
+            <file>file:/C:/Users/Ulises/OneDrive/Desktop/Space/Windows%20General/ULP-Java/ProyectoTransversal/src/proyectotransversal/persistencia/InscripcionData.java</file>
+        </group>
     </open-files>
 </project-private>
